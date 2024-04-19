@@ -103,9 +103,17 @@ import * as readline from 'readline';
 
 //--------------------------------------------- Ejercicio 5 - página 36:
 //Calcule la sumatoria de los números comprendidos en el rango [10,50]
-let contador: number = 0;
+// let contador: number = 0;
 
-for (let index = 10; index <= 50; index++) {
-    contador += index    
-};
-console.log(contador)
+// for (let index = 10; index <= 50; index++) {
+//     contador += index    
+// };
+// console.log(contador)
+
+
+
+//--------------------------------------------- Ejercicio 6 - página 36:
+//Calcule el promedio de un número.
+// let numeros: number = 350;
+// let promedio: number = numeros / 5;
+// console.log("El promedio es:", promedio);

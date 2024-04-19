@@ -71,9 +71,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // });
 //--------------------------------------------- Ejercicio 5 - página 36:
 //Calcule la sumatoria de los números comprendidos en el rango [10,50]
-var contador = 0;
-for (var index = 10; index <= 50; index++) {
-    contador += index;
-}
-;
-console.log(contador);
+// let contador: number = 0;
+// for (let index = 10; index <= 50; index++) {
+//     contador += index    
+// };
+// console.log(contador)
+//--------------------------------------------- Ejercicio 6 - página 36:
+//Calcule el promedio de un número.
+var numeros = 350;
+var promedio = numeros / 5;
+console.log("El promedio es:", promedio);
