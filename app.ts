@@ -85,16 +85,27 @@ import * as readline from 'readline';
 // console.log(`El factorial de ${num} es: ${numFinal}`);
 
 //Solución 2:
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-rl.question('Ingrese un número: ', (numero: string) => {
-    const num: number = parseInt(numero);
-    let numFinal: number = 1;
+// rl.question('Ingrese un número: ', (numero: string) => {
+//     const num: number = parseInt(numero);
+//     let numFinal: number = 1;
 
-    for (let i = 1; i <= num; i++) { numFinal *= i;};
-    console.log(`El factorial de ${num} es: ${numFinal}`);
-    rl.close();
-});
+//     for (let i = 1; i <= num; i++) { numFinal *= i;};
+//     console.log(`El factorial de ${num} es: ${numFinal}`);
+//     rl.close();
+// });
+
+
+
+//--------------------------------------------- Ejercicio 5 - página 36:
+//Calcule la sumatoria de los números comprendidos en el rango [10,50]
+let contador: number = 0;
+
+for (let index = 10; index <= 50; index++) {
+    contador += index    
+};
+console.log(contador)

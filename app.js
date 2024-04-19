@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var readline = require("readline");
 // --------------------------------------------- Ejercicio 1 - página 26:
 //Escribe un programa que a partir de un número entero de tres dígitos entregue el número con los dígitos en orden inverso:
 //Solución 1
@@ -59,17 +58,22 @@ var readline = require("readline");
 // for (let i = 1; i <= num; i++) { numFinal *= i;};
 // console.log(`El factorial de ${num} es: ${numFinal}`);
 //Solución 2:
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-rl.question('Ingrese un número: ', function (numero) {
-    var num = parseInt(numero);
-    var numFinal = 1;
-    for (var i = 1; i <= num; i++) {
-        numFinal *= i;
-    }
-    ;
-    console.log("El factorial de ".concat(num, " es: ").concat(numFinal));
-    rl.close();
-});
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+// rl.question('Ingrese un número: ', (numero: string) => {
+//     const num: number = parseInt(numero);
+//     let numFinal: number = 1;
+//     for (let i = 1; i <= num; i++) { numFinal *= i;};
+//     console.log(`El factorial de ${num} es: ${numFinal}`);
+//     rl.close();
+// });
+//--------------------------------------------- Ejercicio 5 - página 36:
+//Calcule la sumatoria de los números comprendidos en el rango [10,50]
+var contador = 0;
+for (var index = 10; index <= 50; index++) {
+    contador += index;
+}
+;
+console.log(contador);
