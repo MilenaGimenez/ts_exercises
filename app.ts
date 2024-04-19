@@ -38,20 +38,37 @@ import * as readline from 'readline';
 
 
 //Solución 2
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
-rl.question('Ingrese la hora actual: ', (hora: string) => {
-    rl.question('Ingrese la cantidad de horas ', (cantidad: string) => {
+// rl.question('Ingrese la hora actual: ', (hora: string) => {
+//     rl.question('Ingrese la cantidad de horas ', (cantidad: string) => {
 
-        const horaActual = parseInt(hora);
-        const cantHoras = parseInt(cantidad);
-        const horaFinal: number = (horaActual + cantHoras) % 24
+//         const horaActual = parseInt(hora);
+//         const cantHoras = parseInt(cantidad);
+//         const horaFinal: number = (horaActual + cantHoras) % 24
     
-        console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
+//         console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
 
-      rl.close();
-    });
-  });
+//       rl.close();
+//     });
+//   });
+
+
+//--------------------------------------------- Ejercicio 3 - página 31:
+//Modifica el siguiente código (que identifica el mayor de dos números) a fin de encontrar ahora el mayor de 3 números.
+
+let num1: number = 12;
+let num2: number = 5;
+let num3: number = 24;
+
+if (num1 > num2 && num1 > num3) {
+    console.log("El mayor de los tres números es: " + num1);
+    
+} else if (num2 > num1 && num2 > num3){
+    console.log("El mayor de los tres números es: " + num2);
+} else {
+    console.log("El mayor de los tres números es: " + num3);
+};

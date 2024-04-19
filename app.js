@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var readline = require("readline");
 // --------------------------------------------- Ejercicio 1 - página 26:
 //Escribe un programa que a partir de un número entero de tres dígitos entregue el número con los dígitos en orden inverso:
 //Solución 1
@@ -25,16 +24,32 @@ var readline = require("readline");
 // let horaFinal: number = (horaActual + cantHoras) % 24
 // console.log(horaFinal)
 // console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-rl.question('Ingrese la hora actual: ', function (hora) {
-    rl.question('Ingrese la cantidad de horas ', function (cantidad) {
-        var horaActual = parseInt(hora);
-        var cantHoras = parseInt(cantidad);
-        var horaFinal = (horaActual + cantHoras) % 24;
-        console.log("En ".concat(cantHoras, " horas, el reloj marcar\u00E1 las ").concat(horaFinal));
-        rl.close();
-    });
-});
+//Solución 2
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+// rl.question('Ingrese la hora actual: ', (hora: string) => {
+//     rl.question('Ingrese la cantidad de horas ', (cantidad: string) => {
+//         const horaActual = parseInt(hora);
+//         const cantHoras = parseInt(cantidad);
+//         const horaFinal: number = (horaActual + cantHoras) % 24
+//         console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
+//       rl.close();
+//     });
+//   });
+//--------------------------------------------- Ejercicio 3 - página 31:
+//Modifica el siguiente código (que identifica el mayor de dos números) a fin de encontrar ahora el mayor de 3 números.
+var num1 = 12;
+var num2 = 5;
+var num3 = 24;
+if (num1 > num2 && num1 > num3) {
+    console.log("El mayor de los tres números es: " + num1);
+}
+else if (num2 > num1 && num2 > num3) {
+    console.log("El mayor de los tres números es: " + num2);
+}
+else {
+    console.log("El mayor de los tres números es: " + num3);
+}
+;
