@@ -27,24 +27,31 @@ import * as readline from 'readline';
 //Escribe un programa a partir de una hora “actual” y un número entero de horas e indique qué hora marcará el reloj dentro de esa cantidad de horas.
 
 //Solución 1
-let horaActual: number = 11;
-let cantHoras: number = 43;
+// let horaActual: number = 11;
+// let cantHoras: number = 43;
 
-let horaFinal: number = (horaActual + cantHoras) % 24
-console.log(horaFinal)
+// let horaFinal: number = (horaActual + cantHoras) % 24
+// console.log(horaFinal)
 
 
-console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
+// console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
 
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
 
-// rl.question('Ingrese la hora actual: ', (nombre: string) => {
-//   console.log(`Hola, ${nombre}!`);
-  
-//   rl.close();
-// });
+//Solución 2
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-// ;
+rl.question('Ingrese la hora actual: ', (hora: string) => {
+    rl.question('Ingrese la cantidad de horas ', (cantidad: string) => {
+
+        const horaActual = parseInt(hora);
+        const cantHoras = parseInt(cantidad);
+        const horaFinal: number = (horaActual + cantHoras) % 24
+    
+        console.log(`En ${cantHoras} horas, el reloj marcará las ${horaFinal}`);
+
+      rl.close();
+    });
+  });
