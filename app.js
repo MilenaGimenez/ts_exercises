@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var readline = require("readline");
 // --------------------------------------------- Ejercicio 1 - página 26:
 //Escribe un programa que a partir de un número entero de tres dígitos entregue el número con los dígitos en orden inverso:
 //Solución 1
@@ -52,10 +53,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // };
 //--------------------------------------------- Ejercicio 4 - página 36:
 //Calcule el factorial de un número.
-var num = 5;
-var numFinal = 1;
-for (var i = 1; i <= num; i++) {
-    numFinal *= i;
-}
-;
-console.log("El factorial de ".concat(num, " es: ").concat(numFinal));
+//Solución 1:
+// const num: number = 5;
+// let numFinal: number = 1;
+// for (let i = 1; i <= num; i++) { numFinal *= i;};
+// console.log(`El factorial de ${num} es: ${numFinal}`);
+//Solución 2:
+var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question('Ingrese un número: ', function (numero) {
+    var num = parseInt(numero);
+    var numFinal = 1;
+    for (var i = 1; i <= num; i++) {
+        numFinal *= i;
+    }
+    ;
+    console.log("El factorial de ".concat(num, " es: ").concat(numFinal));
+    rl.close();
+});

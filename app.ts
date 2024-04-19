@@ -76,8 +76,25 @@ import * as readline from 'readline';
 
 //--------------------------------------------- Ejercicio 4 - página 36:
 //Calcule el factorial de un número.
-const num: number = 5;
-let numFinal: number = 1;
 
-for (let i = 1; i <= num; i++) { numFinal *= i;};
-console.log(`El factorial de ${num} es: ${numFinal}`);
+//Solución 1:
+// const num: number = 5;
+// let numFinal: number = 1;
+
+// for (let i = 1; i <= num; i++) { numFinal *= i;};
+// console.log(`El factorial de ${num} es: ${numFinal}`);
+
+//Solución 2:
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Ingrese un número: ', (numero: string) => {
+    const num: number = parseInt(numero);
+    let numFinal: number = 1;
+
+    for (let i = 1; i <= num; i++) { numFinal *= i;};
+    console.log(`El factorial de ${num} es: ${numFinal}`);
+    rl.close();
+});
