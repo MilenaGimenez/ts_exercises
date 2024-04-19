@@ -1,9 +1,21 @@
 // Ejercicio 1 - página 26:
 //Escribe un programa que a partir de un número entero de tres dígitos entregue el número con los dígitos en orden inverso:
 
-let numOriginal: number = 145;
-let numString: string = numOriginal.toString()
-let numArray: Array<string> = numString.split('').reverse()
-let numUnir: string = numArray.join('')
+//Solución 1
+// let numOriginal: number = 145;
+// let numString: string = numOriginal.toString()
+// let numArray: Array<string> = numString.split('').reverse()
+// let numUnir: string = numArray.join('')
 
-console.log(numUnir)
+// console.log(numUnir)
+
+//Solución 2
+const invertirNumero = (numero: number) => {
+    let numString: string = numero.toString()
+    let numArray: Array<string> = numString.split('').reverse()
+    let numUnir: string = numArray.join('')
+
+    console.log(`El número inicial es: ${numero}. El número invertido es: ${numUnir}`)
+};
+
+invertirNumero(145);
