@@ -60,15 +60,24 @@ import * as readline from 'readline';
 //--------------------------------------------- Ejercicio 3 - página 31:
 //Modifica el siguiente código (que identifica el mayor de dos números) a fin de encontrar ahora el mayor de 3 números.
 
-let num1: number = 12;
-let num2: number = 5;
-let num3: number = 24;
+// let num1: number = 12;
+// let num2: number = 5;
+// let num3: number = 24;
 
-if (num1 > num2 && num1 > num3) {
-    console.log("El mayor de los tres números es: " + num1);
+// if (num1 > num2 && num1 > num3) {
+//     console.log("El mayor de los tres números es: " + num1);
     
-} else if (num2 > num1 && num2 > num3){
-    console.log("El mayor de los tres números es: " + num2);
-} else {
-    console.log("El mayor de los tres números es: " + num3);
-};
+// } else if (num2 > num1 && num2 > num3){
+//     console.log("El mayor de los tres números es: " + num2);
+// } else {
+//     console.log("El mayor de los tres números es: " + num3);
+// };
+
+
+//--------------------------------------------- Ejercicio 4 - página 36:
+//Calcule el factorial de un número.
+const num: number = 5;
+let numFinal: number = 1;
+
+for (let i = 1; i <= num; i++) { numFinal *= i;};
+console.log(`El factorial de ${num} es: ${numFinal}`);
