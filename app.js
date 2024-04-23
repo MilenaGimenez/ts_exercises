@@ -93,15 +93,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(contador);
 //--------------------------------------------- Ejercicio 8 - página 41:
 // Escribe un programa que a partir de 4 números enteros positivos, los entregue ordenados de menor a mayor.
-var numeroA = 7;
-var numeroB = 0;
-var numeroC = 6;
-var numeroD = 1; //0 1 6 7
-var arrayVacio = [];
-for (var _i = 0, _a = [numeroA, numeroB, numeroC, numeroD]; _i < _a.length; _i++) {
-    var iterator = _a[_i];
-    arrayVacio.push(iterator);
-    arrayVacio.sort();
+// let numeroA: number = 7;
+// let numeroB: number = 0;
+// let numeroC: number = 6;
+// let numeroD: number = 1; //0 1 6 7
+// let arrayVacio: Array<number> = [];
+// for (const iterator of [numeroA, numeroB, numeroC, numeroD]) {
+//     arrayVacio.push(iterator)
+//     arrayVacio.sort()
+// };
+// console.log(arrayVacio);
+//--------------------------------------------- Ejercicio 9 - página 41:
+// Escribe un programa que a partir de un número entero (altura), dibuje un triángulo utilizando asteriscos.
+var altura = 5;
+for (var i = 0; i < altura; i++) {
+    var aterisco = "*".repeat(i);
+    console.log(aterisco);
 }
 ;
-console.log(arrayVacio);
