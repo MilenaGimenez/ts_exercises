@@ -106,8 +106,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //--------------------------------------------- Ejercicio 9 - página 41:
 // Escribe un programa que a partir de un número entero (altura), dibuje un triángulo utilizando asteriscos.
 var altura = 5;
-for (var i = 0; i < altura; i++) {
+for (var i = 1; i <= altura; i++) {
     var aterisco = "*".repeat(i);
     console.log(aterisco);
 }
 ;
+//--------------------------------------------- Ejercicio 10 - página 42:
+// Escribe un programa que a partir de un número entero (altura), dibuje un triángulo utilizando asteriscos.

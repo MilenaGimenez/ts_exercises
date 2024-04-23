@@ -156,7 +156,12 @@ import * as readline from 'readline';
 
 let altura: number = 5;
 
-for (let i = 0; i < altura; i++) {
+for (let i = 1; i <= altura; i++) {
     const aterisco: string = "*".repeat(i)
     console.log(aterisco);    
 };
+
+
+
+//--------------------------------------------- Ejercicio 10 - página 42:
+// Escribe un programa que a partir de un número entero (altura), dibuje un triángulo utilizando asteriscos.
