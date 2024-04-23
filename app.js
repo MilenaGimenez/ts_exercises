@@ -78,6 +78,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(contador)
 //--------------------------------------------- Ejercicio 6 - página 36:
 //Calcule el promedio de un número.
-var numeros = 350;
-var promedio = numeros / 5;
-console.log("El promedio es:", promedio);
+// let numeros: number = 350;
+// let promedio: number = numeros / 5;
+// console.log("El promedio es:", promedio);
+//--------------------------------------------- Ejercicio 7 - página 41:
+// Escribe un programa que a partir de dos números enteros positivos, entregue la suma de todos los números comprendidos entre ellos
+var numeroA = 1;
+var numeroB = 7; //La suma es 20
+var contador = 0;
+for (var i = numeroA + 1; i < numeroB; i++) {
+    var element = i;
+    contador += element;
+}
+;
+console.log(contador);

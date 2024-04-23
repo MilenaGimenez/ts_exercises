@@ -117,3 +117,18 @@ import * as readline from 'readline';
 // let numeros: number = 350;
 // let promedio: number = numeros / 5;
 // console.log("El promedio es:", promedio);
+
+
+
+//--------------------------------------------- Ejercicio 7 - página 41:
+// Escribe un programa que a partir de dos números enteros positivos, entregue la suma de todos los números comprendidos entre ellos
+let numeroA: number = 1;
+let numeroB: number = 7; //La suma es 20
+let contador: number = 0;
+
+for (let i = numeroA + 1; i < numeroB; i++) {
+    const element = i;
+    contador += element;   
+};
+console.log(contador);
+
