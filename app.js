@@ -82,13 +82,26 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // let promedio: number = numeros / 5;
 // console.log("El promedio es:", promedio);
 //--------------------------------------------- Ejercicio 7 - página 41:
-// Escribe un programa que a partir de dos números enteros positivos, entregue la suma de todos los números comprendidos entre ellos
-var numeroA = 1;
-var numeroB = 7; //La suma es 20
-var contador = 0;
-for (var i = numeroA + 1; i < numeroB; i++) {
-    var element = i;
-    contador += element;
+// Escribe un programa que a partir de dos números enteros positivos, entregue la suma de todos los números comprendidos entre ellos.
+// let numeroA: number = 1;
+// let numeroB: number = 7; //La suma es 20
+// let contador: number = 0;
+// for (let i = numeroA + 1; i < numeroB; i++) {
+//     const element = i;
+//     contador += element;   
+// };
+// console.log(contador);
+//--------------------------------------------- Ejercicio 8 - página 41:
+// Escribe un programa que a partir de 4 números enteros positivos, los entregue ordenados de menor a mayor.
+var numeroA = 7;
+var numeroB = 0;
+var numeroC = 6;
+var numeroD = 1; //0 1 6 7
+var arrayVacio = [];
+for (var _i = 0, _a = [numeroA, numeroB, numeroC, numeroD]; _i < _a.length; _i++) {
+    var iterator = _a[_i];
+    arrayVacio.push(iterator);
+    arrayVacio.sort();
 }
 ;
-console.log(contador);
+console.log(arrayVacio);

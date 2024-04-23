@@ -121,14 +121,30 @@ import * as readline from 'readline';
 
 
 //--------------------------------------------- Ejercicio 7 - página 41:
-// Escribe un programa que a partir de dos números enteros positivos, entregue la suma de todos los números comprendidos entre ellos
-let numeroA: number = 1;
-let numeroB: number = 7; //La suma es 20
-let contador: number = 0;
+// Escribe un programa que a partir de dos números enteros positivos, entregue la suma de todos los números comprendidos entre ellos.
+// let numeroA: number = 1;
+// let numeroB: number = 7; //La suma es 20
+// let contador: number = 0;
 
-for (let i = numeroA + 1; i < numeroB; i++) {
-    const element = i;
-    contador += element;   
+// for (let i = numeroA + 1; i < numeroB; i++) {
+//     const element = i;
+//     contador += element;   
+// };
+// console.log(contador);
+
+
+
+//--------------------------------------------- Ejercicio 8 - página 41:
+// Escribe un programa que a partir de 4 números enteros positivos, los entregue ordenados de menor a mayor.
+let numeroA: number = 7;
+let numeroB: number = 0;
+let numeroC: number = 6;
+let numeroD: number = 1; //0 1 6 7
+
+let arrayVacio: Array<number> = [];
+
+for (const iterator of [numeroA, numeroB, numeroC, numeroD]) {
+    arrayVacio.push(iterator)
+    arrayVacio.sort()
 };
-console.log(contador);
-
+console.log(arrayVacio);
